@@ -50,14 +50,14 @@ Exemplo:
 
 Suponha que existam as seguintes contas (números de conta e nomes de clientes):
 
-```
+```text
 1000 - João da Silva
 1001 - Joaquim Ferreira
 1002 - Maria Pereira
 1003 - Pedro José
 ```
 
-E suponha que o usuário informe a string `"Jo"`. 
+E suponha que o usuário informe a string `"Jo"`.
 
 - Nesse caso, deverão ser exibidos os dados das contas 1000, 1001 e 1003, pois em todas elas os nomes dos clientes possuem a substring `"Jo"`.
 
@@ -69,7 +69,7 @@ Experimente implementá-lo em seu computador.
 
 ```java
 Scanner entrada = new Scanner(System.in);
-   	 
+
 System.out.println("Digite uma frase:");
 String frase = entrada.nextLine();
 
