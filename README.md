@@ -17,6 +17,7 @@ Observação: caso você não tenha feito todos os passos do exercício anterior
 
 No exercício anterior, ao tratar a transferência entre as contas, nós criamos dois atributos na classe que trata o caixa eletrônico para tratar duas contas diferentes.
 Mas agora que conhecemos o conceito de coleções, vamos substituir esses dois atributos por uma lista de contas, utilizando a classe `ArrayList`.
+Com isso, o usuário poderá criar quantas contas ele quiser.
 
 Além disso, você deve incluir uma nova opção no menu para listar todas as contas já criadas.
 
