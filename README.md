@@ -39,7 +39,7 @@ Vamos agora adicionar uma nova opção no menu do nosso programa para que o usu�
   - Se tiver dinheiro na conta, deve ser exibida uma mensagem para o usuário dizendo que não é possível cancelar contas com saldo disponível.
   - Se a conta estiver usando o limite (ou seja, tiver saldo negativo), deve ser exibida mensagem dizendo que não é possível cancelar contas em débito.
 
-## (Opcional) Passo 3 - Filtrar contas pelo nome do cliente
+## Passo 3 - Filtrar contas pelo nome do cliente
 
 Agora vamos adicionar uma nova opção de menu para filtrar as contas de acordo com o nome do cliente.
 Esta opção deve funcionar da seguinte forma:
@@ -62,38 +62,39 @@ E suponha que o usuário informe a string `"Jo"`.
 
 - Nesse caso, deverão ser exibidos os dados das contas 1000, 1001 e 1003, pois em todas elas os nomes dos clientes possuem a substring `"Jo"`.
 
-Dica 1: método `contains`
+> **Dica 1: método `contains`**
+> 
+> A classe String do Java possui um método chamado `contains` que indica se uma string possui uma determinada substring.
+> O programa abaixo ilustra a utilização de tal método.
+> Experimente implementá-lo em seu computador.
+> 
+> ```java
+> Scanner entrada = new Scanner(System.in);
+> 
+> System.out.println("Digite uma frase:");
+> String frase = entrada.nextLine();
+> 
+> System.out.println("Digite uma palavra:");
+> String palavra = entrada.nextLine();
+> 
+> if (frase.contains(palavra)) {
+>     System.out.println("Palavra existe na frase");
+> }
+> else {
+>     System.out.println("Palavra não encontrada!");
+> }
+> ```
 
-A classe String do Java possui um método chamado `contains` que indica se uma string possui uma determinada substring.
-O programa abaixo ilustra a utilização de tal método.
-Experimente implementá-lo em seu computador.
 
-```java
-Scanner entrada = new Scanner(System.in);
+> **Dica 2: maiúsculas e minúsculas**
+> 
+> A princípio, não é necessário tratar a questão de maiúsculas e minúsculas.
+> Por exemplo, se o usuário digitasse `"jo"` no exemplo acima, nenhuma conta seria exibida.
+> 
+> Mas, note que não é difícil permitir que o usuário digite uma substring sem se preocupar com isso.
+> Basta fazer uma busca na internet por métodos da classe `String` do Java que convertam strings para minúsculo/maiúsculo, ou que comparem strings ignorando essa questão.
 
-System.out.println("Digite uma frase:");
-String frase = entrada.nextLine();
-
-System.out.println("Digite uma palavra:");
-String palavra = entrada.nextLine();
-
-if (frase.contains(palavra)) {
-    System.out.println("Palavra existe na frase");
-}
-else {
-    System.out.println("Palavra não encontrada!");
-}
-```
-
-Dica 2: maiúsculas e minúsculas
-
-A princípio, não é necessário tratar a questão de maiúsculas e minúsculas.
-Por exemplo, se o usuário digitasse `"jo"` no exemplo acima, nenhuma conta seria exibida.
-
-Mas, note que não é difícil permitir que o usuário digite uma substring sem se preocupar com isso.
-Basta fazer uma busca na internet por métodos da classe `String` do Java que convertam strings para minúsculo/maiúsculo, ou que comparem strings ignorando essa questão.
-
-## (Opcional) Passo 4 – Entendendo as vantagens da classe HashMap
+## Passo 4 – Entendendo as vantagens da classe HashMap
 
 No Passo 1 nós criamos um objeto `ArrayList` para gerenciar a coleção de contas no nosso programa.
 Agora veremos quais são as vantagens de se utilizar um objeto `HashMap` para fazer a mesma coisa.
