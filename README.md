@@ -94,7 +94,7 @@ E suponha que o usuário informe a string `"Jo"`.
 > Mas, note que não é difícil permitir que o usuário digite uma substring sem se preocupar com isso.
 > Basta fazer uma busca na internet por métodos da classe `String` do Java que convertam strings para minúsculo/maiúsculo, ou que comparem strings ignorando essa questão.
 
-## Passo 4 – Entendendo as vantagens da classe HashMap
+## (Opcional) Passo 4 – Entendendo as vantagens da classe HashMap
 
 No Passo 1 nós criamos um objeto `ArrayList` para gerenciar a coleção de contas no nosso programa.
 Agora veremos quais são as vantagens de se utilizar um objeto `HashMap` para fazer a mesma coisa.
