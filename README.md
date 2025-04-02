@@ -49,7 +49,6 @@ Esta opção deve funcionar da seguinte forma:
 
 - O usuário deverá informar uma string com o nome (ou parte do nome) de um cliente.
 - O programa exibirá então os dados (número da conta e nome do cliente) das contas que tenham o nome (ou a parte do nome) informada pelo usuário.
-- Na implementaççao você **deve** fazer a busca **utilizando iteradores**.
 
 Exemplo:
 
@@ -91,8 +90,8 @@ E suponha que o usuário informe a string `"Jo"`.
 
 ## Passo 4 - Melhorando filtro de contas pelo nome do cliente
 
-No passo anterior, se o digitasse `"jo"`, nenhuma conta seria exibida.
-Mas seria bem mais prático para o usuário se ele não precisasse se preocupar em acertas
+No passo anterior, se o usuário digitasse `"jo"`, nenhuma conta seria exibida.
+Mas seria bem mais prático para o usuário se ele não precisasse se preocupar em acertar
 se as letras são maiúsculas ou minúsculas na hora de fazer o filtro.
 Neste passo você deve permitir que o usuário digite uma substring sem se preocupar com isso.
 
@@ -112,7 +111,7 @@ remover várias contas da lista.
   (ignorando maiúsculas e minúsculas) e que tenham saldo igual a zero.
   - Para cada conta que tenha a parte do nome do cliente deve ser informado ao usuário se a conta foi 
     removida ou não, de forma similar ao que foi feito no passo 2.
-- Na implementação, você deve **utilizar iteradores** para buscar as contas a serem removidas.
+- Na implementação, você **deve utilizar iteradores** para buscar as contas a serem removidas.
 
 ## Passo 6 - Ordenando as contas
 
